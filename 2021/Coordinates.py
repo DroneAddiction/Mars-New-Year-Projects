@@ -13,10 +13,26 @@ def update(x, y, alt):
     Alt.set = alt
 
 
-def shift(x, y, alt):
+def movecoords(x, y, alt):
     X.set = x
     Y.set = y
     Alt.set = alt
+
+
+def move(code, dist):
+    match code:
+        case "forward":
+            movecoords(dist)
+        case "back":
+            movecoords(-dist)
+        case "left":
+            movecoords(0, dist)
+        case "right":
+            movecoords(0, -dist)
+        case "up":
+            movecoords(0, 0, dist)
+        case "down":
+            movecoords(0, 0, -dist)
 
 
 def get_coords():
