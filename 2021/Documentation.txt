@@ -1,0 +1,11 @@
+command <param> "<optional param = default>" --description
+
+move <forward, back, left right, up, down> <20-500> --Moves the drone (in cm)
+
+moveadv <x> <y> "<altitude>" "<relative to current = false>" ...
+    <speed (in cm/s) (use at your own risk!)>
+    --Moves the drone using coordinates (in cm) (use at your own risk!)
+
+sleep <float> --Pauses the program (in seconds)
+
+jump <to line> "<repeat for x>"

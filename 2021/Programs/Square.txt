@@ -1,0 +1,8 @@
+me forward 20
+sleep 1
+me right 20
+sleep 1
+me back 20
+sleep 1
+me left 20
+end
