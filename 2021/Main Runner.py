@@ -98,6 +98,9 @@ while (i < len(contents)) | (i == -1):
             me.go_xyz_speed(iparam(1), iparam(2), iparam(3) | 0, iparam(4) | 1)
             coords.movecoords(fparam(1), fparam(2), iparam(3) | 0)
 
+        case "curve":
+            me.go_xyz_speed(iparam(1), iparam(1), iparam(1) | 0, iparam(1) | 1)
+
         case "evalme":
             params2 = ""
             p = 2

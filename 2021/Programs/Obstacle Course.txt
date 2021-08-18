@@ -1,9 +1,16 @@
+#NOTE: This is NOT a standard language!
+#If you want to use this language for yourself, please ask!
+
+# Get to the desired height
 moveheight 114
+
 #Thru Gate
 move forward 100
+
 #Dive Gate
 move down 76
 move forward 100
+
 #Ladder Gate
 move up 76
 move back 50
