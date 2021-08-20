@@ -2,19 +2,19 @@
 #If you want to use this language for yourself, please ask!
 
 # Get to the desired height
-moveheight 114
+move-height 114
 
 #Thru Gate
-move forward 100
+move-forward 100
 
 #Dive Gate
-move down 76
-move forward 100
+move-down 76
+move-forward 100
 
 #Ladder Gate
-move up 76
-move back 50
-move up 76
-move forward 50
-move back 250
-move down 76
+move-up 76
+move-back 50
+move-up 76
+move-forward 50
+move-back 250
+move-down 76

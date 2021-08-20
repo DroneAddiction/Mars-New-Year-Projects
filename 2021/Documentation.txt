@@ -2,18 +2,8 @@ command <param> "<optional param = default>" --description
 
 move <forward, back, left right, up, down> <20-500> --Moves the drone (in cm)
 
-moveplane <x> <y> "<speed (in cm/s) (use at your own risk!)>"
-    --Moves the drone in 2 dimensions at once! (in cm)
-
-moveadv <x> <y> "<altitude>" "<speed (in cm/s) (use at your own risk!)>"
-    --Moves the drone in 3 dimensions! (in cm) (Who are you? a printer head?)
-
-evalme <python code as "me.x"> --Allows you to use more of the djitellopy API
+moveadv <x> <y> "<altitude>" "<relative to current = false>" ...
+    <speed (in cm/s) (use at your own risk!)>
+    --Moves the drone using coordinates (in cm) (use at your own risk!)
 
 sleep <float> --Pauses the program (in seconds)
-
-jump <to line> "<repeat for x>"
-
-end (no parameters) --MUST BE PRESENT AT END OF FILE! PARSER WILL BREAK OTHERWISE!
-
-Use a hashtag (#) in a comment to avoid parsing it!
