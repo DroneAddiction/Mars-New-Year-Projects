@@ -1,5 +1,7 @@
 {
     "move":"me.move",
+    "move-height":"moveheight",
     "moveadv":"go_xyz_speed",
-    "sleep":"sleep"
+    "sleep":"sleep",
+    "log":"print"
 }
