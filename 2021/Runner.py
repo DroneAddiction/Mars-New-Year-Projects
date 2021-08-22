@@ -6,6 +6,7 @@ import KeyPressModule as kp
 
 import json
 
+
 def run(inp):
     print("Loading Program...")
 
@@ -20,11 +21,11 @@ def run(inp):
     print("Compiling...")
 
     forward = "forward"
-    back = "forward"
-    left = "forward"
-    right = "forward"
-    up = "forward"
-    down = "forward"
+    back = "back"
+    left = "left"
+    right = "right"
+    up = "up"
+    down = "down"
 
     # Compile Code
     program = rf.split("\n")
@@ -38,8 +39,8 @@ def run(inp):
         elif ("#" in line) | (line == ""): continue
         else:
             params = line.split(" ")
-            parameters = "(" + ",".join(params[1:]) + ")"
-            parsedprogram.append(fa[params[0]] + parameters)
+            parameters = ",".join(params[1:])
+            parsedprogram.append(fa[params[0]] + "(" + parameters + ")")
 
     print(parsedprogram)
     print("Success!")
@@ -65,14 +66,15 @@ def run(inp):
 
     me.takeoff()
 
-    i = 0 
+    i = 0
     running = True
     while (i < len(parsedprogram)) & running:
+        sleep(0.5)
         line = parsedprogram[i]
-        print(line)
+        print(str(i)+" "+line)
         eval(line)
         i += 1
-        if kp.getKey("SPACE"): running = False
+        #if kp.getKey("SPACE"): running = False
 
     me.land()
 

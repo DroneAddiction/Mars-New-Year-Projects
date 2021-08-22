@@ -1,3 +1,3 @@
 import Runner
 
-Runner.run("Programs/Obstacle Course")
+Runner.run("Programs/Course 2")
